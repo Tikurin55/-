@@ -79,7 +79,7 @@ const questionPool = [
 ];
 const questions=
     [...questionPool]
-    .sort((=>Math.random()-0.5)
+    .sort(()=>Math.random()-0.5)
           .slice(0,10);
     
 let current = 0;
@@ -133,7 +133,7 @@ document.getElementById("nextButton")
         document.body.innerHTML = `
             <h1>結果</h1>
             <p>10問中 ${score} 問正解！</p>
-            <a href="./index.html">
+            ./index.html
                 作品一覧へ戻る
             </button>
         `;
