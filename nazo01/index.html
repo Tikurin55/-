@@ -2,150 +2,39 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>消えた研究ノート</title>
+<title>nazo01</title>
 
 <style>
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: #f7f7f7;
-    color: #222;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
+body{
+    max-width:700px;
+    margin:auto;
+    padding:2rem;
+    font-family:sans-serif;
 }
 
-.container {
-    background: white;
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-h1 {
-    margin-top: 0;
-}
-
-.problem {
-    margin: 2rem 0;
-    line-height: 1.8;
-    font-size: 1.1rem;
-}
-
-input[type="text"] {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0.8rem;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-button {
-    background: #0078d4;
-    color: white;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #005ea6;
-}
-
-#message {
-    margin-top: 1rem;
-    font-weight: bold;
-}
-
-.hint {
-    margin-top: 3rem;
-    padding-top: 1rem;
-    border-top: 1px solid #ddd;
-}
-
-.hint a {
-    color: #0078d4;
-    text-decoration: none;
+button{
+    padding:10px 20px;
+    font-size:1rem;
 }
 </style>
-</head>
 
+</head>
 <body>
 
-<div class="container">
+<h1>nazo01</h1>
 
-    <h1>消えた研究ノート</h1>
+<h2>遊び方</h2>
 
-    <p>
-        想定時間：10〜15分<br>
-        難易度：★★☆☆☆
-    </p>
+<ul>
+    <li>全部で10問あります。</li>
+    <li>答えはひらがなで入力してください。</li>
+    <li>途中で正誤判定は表示されません。</li>
+    <li>最後にまとめて採点します。</li>
+</ul>
 
-    <div class="problem">
-        <h2>問題</h2>
-
-        <p>
-            ここに問題文を書く。
-        </p>
-
-        <p>
-            例：<br>
-            「朝は4本、昼は2本、夜は3本で歩くものは？」
-        </p>
-
-    </div>
-
-    <input
-        type="text"
-        id="answer"
-        placeholder="答えを入力">
-
-    <button onclick="checkAnswer()">
-        回答
-    </button>
-
-    <div id="message"></div>
-
-    <div class="hint">
-        hint.htmlヒントを見る</a>
-    </div>
-
-</div>
-
-<script>
-
-const correctAnswers = [
-    "にんげん",
-    "人間"
-];
-
-function checkAnswer() {
-
-    const answer =
-        document
-        .getElementById("answer")
-        .value
-        .trim();
-
-    if (correctAnswers.includes(answer)) {
-
-        document.getElementById("message").innerHTML =
-            "正解！";
-
-        setTimeout(() => {
-            location.href = "ending.html";
-        }, 1000);
-
-    } else {
-
-        document.getElementById("message").innerHTML =
-            "不正解です。";
-
-    }
-}
-
-</script>
+game.html
+    ゲームを始める
+</button>
 
 </body>
 </html>
