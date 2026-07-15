@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>nazo01</title>
+<link rel="preconnect" href="https?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
 
 <style>
 
@@ -10,28 +11,56 @@ body{
     max-width:700px;
     margin:auto;
     padding:2rem;
-    font-family:sans-serif;
+    font-family:”Zen Kaku Gothic New",sans-serif;
+    background:#1d1d1d;
+    color:white;
 }
 
 #questionNumber{
     font-size:1.2rem;
     margin-bottom:1rem;
+    font-weight:bold;
+    color:#0078d4;
 }
 
 #question{
-    font-size:1.5rem;
+    text-align:center;
+    font-size:3rem;
+    letter-spacing:0.2em;
     margin-bottom:2rem;
+    margin:50px 0;
 }
 
 input{
     width:100%;
-    padding:10px;
-    font-size:1rem;
+    padding:15px;
+    font-size:1.2rem;
+    border:2px solid #ddd;
+    border-radius:10px;
 }
+
+input:focus{
+    outline:none;
+    border-color:#0078d4;
+}
+
 
 button{
     margin-top:1rem;
-    padding:10px 20px;
+    background:#0078d4;
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:10px 20px;    
+    cursor:pointer;
+    transition:.2s;
+
+}
+
+
+button:hover{
+    transform:translateY(-2px);
+    background:#005ea6;
 }
 
 #result{
